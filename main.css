@@ -1,0 +1,71 @@
+body{
+	font: normal 18px Arial;
+	line-height: 100%;
+}
+
+.grid{
+	position: relative;
+	width: auto;
+	height: auto;
+	display: inline-block;
+    margin-left: 35px;
+    margin-top: 35px;
+    float: left;
+}
+
+.grid span{
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 20px;
+    line-height: 40px;
+	text-align: center;
+	color: #000;
+	background: #ccc;
+}
+
+.grid span.blank{
+	background: transparent;
+	border: 1px solid #000;
+}
+
+.grid.animate span{
+	-webkit-transition: 0.5s left, 0.5s top;
+ 	transition: 0.5s left, 0.5s top;
+}
+
+#grid-config{
+	text-align: center;
+	margin-top: 30px;
+	color: #000;
+}
+
+#grid-config input {
+		width: 45%;
+}
+
+#grid-config input[type="button"] {
+    cursor: pointer;
+    padding: 10px 20px;
+	margin: 0px 2px;
+    border: 0;
+    border-radius: 4px;
+    background: #000;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: auto;
+}
+
+
+@media(max-width:991px){
+	.grid{
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+}

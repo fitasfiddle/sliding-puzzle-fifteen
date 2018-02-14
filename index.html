@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sliding 15 Puzzle</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="grid-config">
+		<p>
+			<!-- <span>Enter puzzle size you want to generate.. key in one number:</span> -->
+			<input type="number" id="gridSize" name="gridSize" placeholder="Enter puzzle size">
+			<input type="number" id="tileSize" name="tileSize" placeholder="Enter tile size">
+		</p>
+		<p>
+			<input type="button" id="addGrid" value="Add a new Puzzle" onclick="addGridFunc('gridSize','tileSize');"/>
+			<input type="button" id="resetAllGrid" value="Reset all Puzzles" onclick="resetAllGridsFunc();"/>
+		</p>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
